@@ -9,8 +9,11 @@ namespace Day4EF.Models
     public class Order
     {
         public int Id { get; set; }
-        public Customer Customer { get; set; }
+        public int CustomerId { get; set; }
         public DateTime OrderDate { get; set; }
         public double Discount { get; set; } // Percent
+
+        public virtual Customer Customer { get; set; }
+        public virtual ICollection<OrderItem> Items { get; set; }
     }
 }

@@ -56,6 +56,14 @@
     <Compile Include="Migrations\201701261513060_Initial.Designer.cs">
       <DependentUpon>201701261513060_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201701261644084_addedAccessor.cs" />
+    <Compile Include="Migrations\201701261644084_addedAccessor.Designer.cs">
+      <DependentUpon>201701261644084_addedAccessor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701261651007_addedvirtualaccesortoorderitem.cs" />
+    <Compile Include="Migrations\201701261651007_addedvirtualaccesortoorderitem.Designer.cs">
+      <DependentUpon>201701261651007_addedvirtualaccesortoorderitem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Inventory.cs" />
@@ -72,6 +80,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201701261513060_Initial.resx">
       <DependentUpon>201701261513060_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701261644084_addedAccessor.resx">
+      <DependentUpon>201701261644084_addedAccessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701261651007_addedvirtualaccesortoorderitem.resx">
+      <DependentUpon>201701261651007_addedvirtualaccesortoorderitem.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
